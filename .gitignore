@@ -151,3 +151,8 @@ dist
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+terraform_scripts/sahitya_gupta_dev.pem
+
+/terraform_scripts/.terraform 

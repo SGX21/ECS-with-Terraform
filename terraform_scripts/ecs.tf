@@ -33,6 +33,8 @@ DEFINITION
 
   network_mode = "bridge"
 
+  requires_compatibilities = ["EC2"] # Ensuring EC2 launch type compatibility
+
   tags = {
     "env"       = "dev"
     "createdBy" = "Sahitya_Gupta"
@@ -57,7 +59,7 @@ resource "aws_ecs_service" "service" {
   launch_type = "EC2"
 
   # Dependencies - ensure the ALB listener is created before the ECS service
-  depends_on = [aws_lb_listener.web_listener]
+  depends_on = [aws_lb_listener.webapp-listener]
 
   tags = {
     "env"       = "dev"
