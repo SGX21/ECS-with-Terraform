@@ -155,4 +155,8 @@ yarn-error.log*
 
 terraform_scripts/sahitya_gupta_dev.pem
 
-/terraform_scripts/.terraform 
+terraform_scripts/.terraform 
+
+terraform_scripts/.terraform.lock.hcl
+
+terraform_scripts/terraform.tfstate
